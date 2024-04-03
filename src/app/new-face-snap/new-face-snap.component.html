@@ -19,7 +19,7 @@
             <input type="text" id="localisation" placeholder="Localisation du FaceSnap" formControlName="localisation">
         </div>
         <div class="action-buttons">
-            <button type="submit" (click)="onSubmitForm()">Enregistrer</button>
+            <button type="submit" (click)="onSubmitForm()" [disabled]="snapForm.invalid">Enregistrer</button>
         </div>
     </form>
 </div>
